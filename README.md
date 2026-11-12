@@ -6,12 +6,13 @@ Unofficial PUBG 0.16 cosmetic modification source archive.
 
 ## Tài liệu hướng dẫn
 
+- [END_TO_END_TOOLCHAIN_GUIDE.md](END_TO_END_TOOLCHAIN_GUIDE.md) — lộ trình từ phân tích SDK, xây dựng Skin ID Dumper, chuẩn hóa catalog đến phát triển mod và đóng gói.
 - [MODDING_GUIDE.md](MODDING_GUIDE.md) — hướng dẫn phát triển dự án mod Lua: kiến trúc, cấu hình, tổ chức dữ liệu, kiểm thử và quản lý Git.
 - [USER_GUIDE.md](USER_GUIDE.md) — hướng dẫn tải repository, khôi phục mã nguồn Lua và đọc cấu hình hiện có.
 
 ## Source
 
-The original Lua source is stored in eight sequential parts under `src/parts/` because the GitHub upload interface limits the size of a single write.
+The original Lua source is stored in eight sequential parts under src/parts/ because the GitHub upload interface limits the size of a single write.
 
 ### Rebuild the original Lua file
 
@@ -19,23 +20,23 @@ Requirements: Python 3.
 
 From the repository root, run:
 
-```bash
+~~~bash
 python src/assemble_source.py
-```
+~~~
 
 The script joins the eight parts in filename order and creates:
 
-```
+~~~text
 src/ManhDuathoi-Skin-0.16-Cosmetic-Refine.lua
-```
+~~~
 
 Do not reorder, edit, or omit the part files before rebuilding.
 
 ## Repository layout
 
-- `src/parts/` — sequential source segments
-- `src/assemble_source.py` — rebuild script
-- `README.md` — project information and instructions
+- src/parts/ — sequential source segments
+- src/assemble_source.py — rebuild script
+- README.md — project information and instructions
 
 ## Notes
 
