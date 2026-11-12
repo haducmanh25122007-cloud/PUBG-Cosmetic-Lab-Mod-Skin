@@ -1,2 +1,3 @@
-# PUBG-Cosmetic-Lab-Mod-Skin
-A PUBG cosmetic modification project featuring Lua source code, skin configurations, and documentation.
+# PUBG 0.16 Cosmetic Lab
+
+Unofficial PUBG 0.16 cosmetic modification source archive.
