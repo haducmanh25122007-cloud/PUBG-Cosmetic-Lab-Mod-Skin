@@ -4,9 +4,10 @@ Unofficial PUBG 0.16 cosmetic modification source archive.
 
 > **Disclaimer:** This is an unofficial, community-maintained project and is not affiliated with, endorsed by, or supported by PUBG or KRAFTON. Use only in environments where modifications are permitted. Compatibility and account-safety are not guaranteed.
 
-## Hướng dẫn sử dụng
+## Tài liệu hướng dẫn
 
-Xem [USER_GUIDE.md](USER_GUIDE.md) để biết cách tải repository, khôi phục mã nguồn Lua, đọc cấu hình và xử lý lỗi thường gặp.
+- [MODDING_GUIDE.md](MODDING_GUIDE.md) — hướng dẫn phát triển dự án mod Lua: kiến trúc, cấu hình, tổ chức dữ liệu, kiểm thử và quản lý Git.
+- [USER_GUIDE.md](USER_GUIDE.md) — hướng dẫn tải repository, khôi phục mã nguồn Lua và đọc cấu hình hiện có.
 
 ## Source
 
