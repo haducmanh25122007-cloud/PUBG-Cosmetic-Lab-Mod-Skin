@@ -1,45 +1,49 @@
 # PUBG 0.16 Cosmetic Lab
 
-Unofficial PUBG 0.16 cosmetic modification source archive.
+Kho lưu trữ mã nguồn mod cosmetic PUBG 0.16 do cộng đồng quản lý, không chính thức.
 
-> **Disclaimer:** This is an unofficial, community-maintained project and is not affiliated with, endorsed by, or supported by PUBG or KRAFTON. Use only in environments where modifications are permitted. Compatibility and account-safety are not guaranteed.
+> **Tuyên bố miễn trừ:** Dự án không liên kết, không được PUBG hoặc KRAFTON xác nhận hay hỗ trợ. Chỉ sử dụng trong môi trường cho phép chỉnh sửa. Không đảm bảo tương thích hoặc an toàn tài khoản.
 
-## Tài liệu hướng dẫn
+## Tài liệu hướng dẫn — Tiếng Việt
 
-- [END_TO_END_TOOLCHAIN_GUIDE.md](END_TO_END_TOOLCHAIN_GUIDE.md) — lộ trình từ phân tích SDK, xây dựng Skin ID Dumper, chuẩn hóa catalog đến phát triển mod và đóng gói.
+- [HUONG_DAN_TOAN_BO_QUY_TRINH.md](HUONG_DAN_TOAN_BO_QUY_TRINH.md) — hướng dẫn quy trình từ phân tích SDK, xây dựng Skin ID Dumper, chuẩn hóa catalog đến phát triển mod và đóng gói.
 - [MODDING_GUIDE.md](MODDING_GUIDE.md) — hướng dẫn phát triển dự án mod Lua: kiến trúc, cấu hình, tổ chức dữ liệu, kiểm thử và quản lý Git.
 - [USER_GUIDE.md](USER_GUIDE.md) — hướng dẫn tải repository, khôi phục mã nguồn Lua và đọc cấu hình hiện có.
 
-## Source
+## Documentation — English
 
-The original Lua source is stored in eight sequential parts under src/parts/ because the GitHub upload interface limits the size of a single write.
+- [END_TO_END_TOOLCHAIN_GUIDE.md](END_TO_END_TOOLCHAIN_GUIDE.md) — end-to-end roadmap for SDK analysis, Skin ID Dumper, catalog development, mod architecture, testing, and release.
 
-### Rebuild the original Lua file
+## Mã nguồn
 
-Requirements: Python 3.
+Mã nguồn Lua gốc được chia thành tám phần liên tiếp trong `src/parts/` do giới hạn kích thước khi tải file lên GitHub.
 
-From the repository root, run:
+### Ghép lại file Lua gốc
+
+Yêu cầu: Python 3.
+
+Mở terminal tại thư mục gốc repository và chạy:
 
 ~~~bash
 python src/assemble_source.py
 ~~~
 
-The script joins the eight parts in filename order and creates:
+Script sẽ ghép tám phần theo đúng thứ tự và tạo file:
 
 ~~~text
 src/ManhDuathoi-Skin-0.16-Cosmetic-Refine.lua
 ~~~
 
-Do not reorder, edit, or omit the part files before rebuilding.
+Không đổi thứ tự, chỉnh sửa hoặc bỏ thiếu các file part trước khi ghép.
 
-## Repository layout
+## Cấu trúc repository
 
-- src/parts/ — sequential source segments
-- src/assemble_source.py — rebuild script
-- README.md — project information and instructions
+- `src/parts/` — các phần mã nguồn liên tiếp.
+- `src/assemble_source.py` — script ghép mã nguồn.
+- `README.md` — thông tin dự án và hướng dẫn.
 
-## Notes
+## Ghi chú
 
-- The source references internal game modules and APIs; it may not work across game versions.
-- The repository does not include game assets or proprietary PUBG files.
-- No license is declared. All rights remain with their respective owners.
+- Source tham chiếu các module và API nội bộ của game; có thể không hoạt động ở phiên bản game khác.
+- Repository không chứa asset game hoặc tệp PUBG độc quyền.
+- Repository chưa khai báo giấy phép. Mọi quyền vẫn thuộc chủ sở hữu tương ứng.
